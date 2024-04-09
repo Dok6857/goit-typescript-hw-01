@@ -1,12 +1,10 @@
-function add(num1: number, num2: number) {
-    return num1 + num2;
-  }
-  
-  add(1, 1);
-  
-  let fullName: string = '';
-  let age = 12;
+import { concatenation } from "./concatenation";
 
-//   const something: boolean[] = [3, 'something', true]
+const button = document.querySelector('button');
+const input = document.querySelector('input');
 
-type user = {}
+if (button && input) {
+  button.addEventListener('click', () => {
+    concatenation(input.value, 'hello');
+  })
+}
